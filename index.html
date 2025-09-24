@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bitácora Primer Parcial - Diseño Web</title>
+    <title>Bitácora - Diseño Web</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
     <style>
@@ -16,7 +16,6 @@
             font-size: 16px;
         }
 
-        /* Encabezado */
         header {
             text-align: center;
             background-color: #003366;
@@ -81,26 +80,26 @@
             margin-bottom: 10px;
             font-size: 24px;
         }
-
+        h3 {
+            color: #003366;
+            font-size: 20px;
+        }
         p {
             font-size: 16px;
             margin-bottom: 15px;
         }
 
-        /* Imágenes responsivas */
         .responsive-img {
             max-width: 100%;
             height: auto;
             display: block;
         }
 
-        /* Listas */
         ul, ol {
             font-size: 16px;
             margin-left: 20px;
         }
 
-        /* Footer */
         footer {
             text-align: center;
             background-color: #003366;
@@ -109,29 +108,40 @@
             margin-top: 30px;
             font-size: 14px;
         }
+
+        .gradient-box {
+            padding: 20px;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
 
     <!-- Encabezado -->
     <header>
-      <p style="color: white; margin-bottom: 10px; font-size: 24px;">Bitácora Primer Parcial - Clase de Diseño Web | 2025</p>
+      <p style="color: white; margin-bottom: 10px; font-size: 24px;">Bitácora Unidad 1 y 2 - Clase de Diseño Web | 2025</p>
     </header>
 
     <!-- Índice -->
     <nav class="indice">
         <h2>Índice</h2>
-        <ul>
+        <ul><li><a href="#unidad1">Unidad 1</a></li>
             <li><a href="#tema1">Tema 1 – Conceptos básicos + Shortcuts Mac</a></li>
             <li><a href="#codigo1">Código 1 – Index + Title + Head + Body + Párrafos + Títulos + Imágenes</a></li>
             <li><a href="#tema2">Tema 2 – Figma + Diagrama de flujo</a></li>
             <li><a href="#codigo2">Código 2 – Color + Tamaño + Botón + Mapa + Video + Listas</a></li>
             <li><a href="#codigo3">Código 3 – Fondos + Article + Nav + Footer + Fuentes</a></li>
             <li><a href="#foro">Foro IA – IADA</a></li>
+            <li><a href="#unidad2">Unidad 2</a></li>
         </ul>
     </nav>
 
     <main>
+        <section id="unidad1">
+            <h2>Unidad 1</h2>
         <section id="tema1">
             <h2>Tema 1 – Conceptos básicos + Shortcuts Mac</h2>
             <p>
@@ -244,10 +254,70 @@
                 Ver presentación en Canva
             </a>
         </section>
+    </section>
+
+        <section id="unidad2">
+            <h2>Unidad 2</h2>
+
+            <div class="gradient-box">
+                <h3>Uso del &lt;div&gt; y SEO</h3>
+                <p>
+                    El elemento <strong>&lt;div&gt;</strong> sirve para organizar el contenido de una página agrupando elementos dentro de un contenedor. 
+                    En esta unidad también vimos la importancia del <strong>SEO (Search Engine Optimization)</strong>, que nos ayuda a aparecer al inicio de las búsquedas en Google 
+                    mediante el uso correcto de etiquetas, títulos y metadatos.
+                </p>
+                <p>
+                    Además, utilizamos <strong>padding</strong> para crear un margen interior entre el contenido y el borde del contenedor, 
+                    lo cual mejora la legibilidad y el diseño visual.
+                </p>
+            </div>
+
+            <h3>Prototipado</h3>
+            <p>
+                Existen diferentes tipos de prototipado en diseño web:
+            </p>
+            <ul>
+                <li><strong>Bocetos a mano:</strong> Primer acercamiento rápido y sencillo.</li>
+                <li><strong>Wireframes de baja fidelidad:</strong> Representación esquemática sin detalles visuales.</li>
+                <li><strong>Wireframes estáticos:</strong> Versiones más definidas pero sin interactividad.</li>
+                <li><strong>Mapa de sitio:</strong> Representación jerárquica de las páginas de un sitio web.</li>
+            </ul>
+
+            <h3>Uso de CSS Gradient y Border CSS Generator</h3>
+            <p>
+                Estas herramientas permiten generar <strong>fondos degradados</strong> y <strong>bordes personalizados</strong> de manera sencilla, 
+                facilitando la creación de diseños más atractivos en nuestras páginas web. 
+                Aquí utilizamos un ejemplo de <strong>gradient</strong> aplicado al bloque superior.
+            </p>
+
+            <h3>Actividades</h3>
+            <p><strong>Bocetos:</strong></p>
+            <img src="img/bocetos.jpg" class="responsive-img">
+            
+            <p><strong>Wireframes estáticos:</strong></p>
+            <img src="img/wireframes.png" class="responsive-img">
+            
+            <p><strong>Mapa de sitio:</strong></p>
+            <img src="img/mapa-sitio.jpg" class="responsive-img">
+            
+            <p><strong>Lectura de esquemática – Joan Costa:</strong></p>
+            <p>
+                Costa plantea que el gráfico no solo informa, sino que también explica, persuade y facilita la comprensión mediante recursos visuales 
+                (formas, símbolos, jerarquías, diagramas).
+            </p>
+            <p>
+                Es decir, el gráfico es un instrumento didáctico dentro de la comunicación visual.
+            </p>
+            <p>
+                Este cartel publicitario de <strong>Caffenio</strong> es un ejemplo que informa que el café es 100% mexicano e invita al lector a degustar de su sabor, 
+                haciendo uso de la tipografía para transmitir la calidez de la bebida.
+            </p>
+            <img src="img/caffenio.png" class="responsive-img" style="width: 800px;">
+        </section>
     </main>
 
     <footer>
-        <p>Bitácora Primer Parcial - Clase de Diseño Web | 2025</p>
+        <p>Bitácora - Clase de Diseño Web | 2025</p>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3393.0340142469904!2d-106.43630752446322!3d31.742272524113073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ea4359ba3469d5%3A0x5fdab3bc5a4f953c!2sUACJ%20IIT-IADA!5e0!3m2!1ses-419!2smx!4v1757485452561!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </footer>
 
