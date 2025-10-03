@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bitácora - Diseño Web</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/favicon.ico">
 
     <style>
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
-            background-color: #f0f7ff;
-            color: #1a1a2e;
+            background-color: #1c1c1c;
+            color: #1c1c1c;
             line-height: 1.6;
             font-size: 16px;
         }
@@ -20,7 +22,8 @@
             text-align: center;
             background-color: #003366;
             width: 1440px;
-            height: 50px;
+            height: 80px;
+            margin-bottom: 20px;
         }
 
         .header-img {
@@ -29,6 +32,7 @@
             object-fit: cover;
             border-radius: 10px;
         }
+        
 
         /* Índice */
         .indice {
@@ -39,7 +43,7 @@
         }
 
         .indice h2 {
-            color: #003366;
+            color: #c4333e;
             font-weight: 600;
             font-size: 22px;
         }
@@ -61,6 +65,41 @@
             font-weight: 500;
             font-size: 16px;
         }
+        .menu{
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            overflow: hidden;
+            background-color: white;
+            border-radius: 50px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+            opacity: 0.5; /* 0.0 es invisible, 1.0 es opaco */
+            top: 2px;
+            left: 30px;
+            z-index:1;
+        }
+        .menufondo{
+            padding: 20px;
+            top: 0;
+            overflow: hidden;
+            background-color: white;
+            border-radius: 50px;
+            position: absolute;
+            top: 155px;
+            left: 0px;
+            z-index: 0;
+        }
+        .inicio{
+            text-align: left;
+            padding: 20px;
+            position: absolute;
+            top: 2px;
+            left: 30px;
+            z-index:1;
+        }
+        .centrar{
+            text-align: center;
+        }
 
         /* Secciones */
         main {
@@ -76,9 +115,9 @@
         }
 
         h2 {
-            color: #004080;
-            margin-bottom: 10px;
-            font-size: 24px;
+            color: #c4333e;
+            font-size: 100px;
+            text-align: center;
         }
         h3 {
             color: #003366;
@@ -122,10 +161,28 @@
 
     <!-- Encabezado -->
     <header>
-      <p style="color: white; margin-bottom: 10px; font-size: 24px;">Bitácora Unidad 1 y 2 - Clase de Diseño Web | 2025</p>
+      <p id="inicio" style="color: white; margin-bottom: 10px; font-size: 50px; font-family: 'Oswald';">Bitácora Unidad 1 y 2 - Clase de Diseño Web | 2025</p>
     </header>
-
-    <!-- Índice -->
+    
+    <nav class="menu">
+    <div class="inicio">
+        <a href="#inicio"><img src="img/logo.png" style="width: 20px;"></a>
+    </div>
+        <div class="centrar">
+        <a href="#body"; style="padding: 20px;">Unidad 1</a>
+        <a href="#tema1"; style="padding: 20px;">Tema 1</a>
+        <a href="#codigo1"; style="padding: 20px;">Código 1</a>
+        <a href="#tema2"; style="padding: 20px;">Tema 2</a>
+        <a href="#codigo2"; style="padding: 20px;">Código 2</a>
+        <a href="#codigo3"; style="padding: 20px;">Código 3</a>
+        <a href="#foro"; style="padding: 20px;">Foro IA</a>
+        <a href="#unidad2"; style="padding: 20px;">Unidad 2</a>
+        <a href="#tema3"; style="padding: 20px;">Tema 3</a>
+        <a href="#tema4"; style="padding: 20px;">Tema 4</a>
+        <a href="#tema5"; style="padding: 20px;">Tema 5</a>
+        </div>
+    </nav>
+    <!-- Índice --><!--
     <nav class="indice">
         <h2>Índice</h2>
         <ul><li><a href="#unidad1">Unidad 1</a></li>
@@ -137,13 +194,13 @@
             <li><a href="#foro">Foro IA – IADA</a></li>
             <li><a href="#unidad2">Unidad 2</a></li>
         </ul>
-    </nav>
+    </nav>-->
 
     <main>
         <section id="unidad1">
             <h2>Unidad 1</h2>
         <section id="tema1">
-            <h2>Tema 1 – Conceptos básicos + Shortcuts Mac</h2>
+            <h3 style="font-size: 25px;">Tema 1 – Conceptos básicos + Shortcuts Mac</h3>
             <p>
                 En este tema se abordan los conceptos fundamentales del diseño web, tales como <strong>hipertexto, UX (Experiencia de Usuario) y prototipado</strong>. 
                 Para entenderlos mejor, podemos compararlos con el <strong>volleyball</strong>:
@@ -171,7 +228,7 @@
         </section>
 
         <section id="codigo1">
-            <h2>Código 1 – Index + Title + Head + Body + Párrafos + Títulos + Imágenes</h2>
+            <h3 style="font-size: 25px;">Código 1 – Index + Title + Head + Body + Párrafos + Títulos + Imágenes</h3>
             <p>
                 En esta sección se explican las etiquetas principales del HTML que forman la estructura básica de una página web.
             </p>
@@ -188,7 +245,7 @@
         </section>
 
         <section id="tema2">
-            <h2>Tema 2 – Figma + Diagrama de flujo</h2>
+            <h3 style="font-size: 25px;">Tema 2 – Figma + Diagrama de flujo</h3>
             <img src="img/escritorio.jpg" class="responsive-img" style="width: 600px;">
             <p><em>Actividad para entender a primer concepto cómo funciona el código HTML.</em></p>
 
@@ -203,7 +260,7 @@
         </section>
 
         <section id="codigo2">
-            <h2>Código 2 – Color + Tamaño + Botón + Mapa + Video + Listas</h2>
+            <h3 style="font-size: 25px;">Código 2 – Color + Tamaño + Botón + Mapa + Video + Listas</h3>
             <p>
                 En esta sección se describen etiquetas y elementos que permiten dar estilo y funcionalidad a una página web:
             </p>
@@ -219,7 +276,7 @@
         </section>
 
         <section id="codigo3">
-            <h2>Código 3 – Fondos + Article + Nav + Footer + Fuentes</h2>
+            <h3 style="font-size: 25px;">Código 3 – Fondos + Article + Nav + Footer + Fuentes</h3>
             <p>
                 Este código se centra en organizar la estructura y apariencia de la página, combinando diseño y semántica:
             </p>
@@ -239,7 +296,7 @@
         </section>
 
         <section id="foro">
-            <h2>Foro IA – IADA</h2>
+            <h3 style="font-size: 25px;">Foro IA – IADA</h3>
             <p>
                 En el reciente foro sobre Inteligencia Artificial impartido en el Instituto IADA, los ponentes compartieron su visión
                  sobre cómo la IA puede convertirse en una herramienta valiosa tanto para estudiantes como para profesionales, así como 
@@ -271,8 +328,8 @@
                     lo cual mejora la legibilidad y el diseño visual.
                 </p>
             </div>
-
-            <h3>Prototipado</h3>
+        <section id="tema3">
+            <h3>Tema 3 – Prototipado</h3>            
             <p>
                 Existen diferentes tipos de prototipado en diseño web:
             </p>
@@ -289,7 +346,8 @@
                 facilitando la creación de diseños más atractivos en nuestras páginas web. 
                 Aquí utilizamos un ejemplo de <strong>gradient</strong> aplicado al bloque superior.
             </p>
-
+            </section>
+<section>
             <h3>Actividades</h3>
             <p><strong>Bocetos:</strong></p>
             <img src="img/bocetos.jpg" class="responsive-img">
@@ -314,6 +372,36 @@
             </p>
             <img src="img/caffenio.png" class="responsive-img" style="width: 800px;">
         </section>
+
+        <section id="tema4">
+            <h3>Tema 4 – Logo</h3>
+            <img src="img/reticula.jpg" class="responsive-img" style="width: 500px;">
+            <p>
+                El <strong>logo de Cromateca</strong> representa a un negocio dedicado a vender artículos para arte. 
+                Se utilizó una <strong>retícula</strong> como base para garantizar proporciones equilibradas y un diseño limpio.
+            </p>
+            <img src="img/IOS.png" class="responsive-img" style="width: 300px;">
+            <p>
+                Este es un ejemplo de <strong>icono para app (iOS)</strong>, diseñado para que sea identificable, simple y adaptado a diferentes tamaños de pantalla.
+            </p>
+            <img src="img/GRID.png" class="responsive-img" style="width: 500px;">
+        </section>
+
+        <section id="tema5">
+            <h3>Tema 5 – Static, Absolute, Fixed y Sticky</h3>
+            <p>
+                Estos son valores de la propiedad <strong>position</strong> en CSS que definen cómo se ubican los elementos en la página:
+            </p>
+            <ul>
+                <li><strong>Static:</strong> Posición por defecto, sigue el flujo normal del documento.</li>
+                <li><strong>Absolute:</strong> Se coloca en relación al contenedor padre con posición relativa.</li>
+                <li><strong>Fixed:</strong> Permanece fijo en la pantalla aunque se haga scroll.</li>
+                <li><strong>Sticky:</strong> Se comporta como relative pero al llegar a un punto definido se mantiene fijo.</li>
+            </ul>
+        </section>
+
+</section>
+
     </main>
 
     <footer>
