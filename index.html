@@ -169,18 +169,19 @@
         <a href="#inicio"><img src="img/logo.png" style="width: 20px;"></a>
     </div>
         <div class="centrar">
-        <a href="#body"; style="padding: 20px;">Unidad 1</a>
-        <a href="#tema1"; style="padding: 20px;">Tema 1</a>
-        <a href="#codigo1"; style="padding: 20px;">Código 1</a>
-        <a href="#tema2"; style="padding: 20px;">Tema 2</a>
-        <a href="#codigo2"; style="padding: 20px;">Código 2</a>
-        <a href="#codigo3"; style="padding: 20px;">Código 3</a>
-        <a href="#foro"; style="padding: 20px;">Foro IA</a>
-        <a href="#unidad2"; style="padding: 20px;">Unidad 2</a>
-        <a href="#tema3"; style="padding: 20px;">Tema 3</a>
-        <a href="#tema4"; style="padding: 20px;">Tema 4</a>
-        <a href="#tema5"; style="padding: 20px;">Tema 5</a>
-        <a href="#Actualizacion"; style="padding: 20px;">Actualización</a>
+        <a href="#body"; style="padding: 10px;">Unidad 1</a>
+        <a href="#tema1"; style="padding: 10px;">Tema 1</a>
+        <a href="#codigo1"; style="padding: 10px;">Código 1</a>
+        <a href="#tema2"; style="padding: 10px;">Tema 2</a>
+        <a href="#codigo2"; style="padding: 10px;">Código 2</a>
+        <a href="#codigo3"; style="padding: 10px;">Código 3</a>
+        <a href="#foro"; style="padding: 10px;">Foro IA</a>
+        <a href="#unidad2"; style="padding: 10px;">Unidad 2</a>
+        <a href="#tema3"; style="padding: 10px;">Tema 3</a>
+        <a href="#tema4"; style="padding: 10px;">Tema 4</a>
+        <a href="#tema5"; style="padding: 10px;">Tema 5</a>
+        <a href="#proyecto2"; style="padding: 10px;">Proyecto 2</a>
+        <a href="#Actualizacion"; style="padding: 10px;">Actualización</a>
         </div>
     </nav>
     <!-- Índice --><!--
@@ -383,16 +384,34 @@
 
         <section id="tema4">
             <h3>Tema 4 – Logo</h3>
-            <img src="img/reticula.jpg" class="responsive-img" style="width: 500px;">
-            <p>
-                El <strong>logo de Cromateca</strong> representa a un negocio dedicado a vender artículos para arte. 
-                Se utilizó una <strong>retícula</strong> como base para garantizar proporciones equilibradas y un diseño limpio.
-            </p>
-            <img src="img/IOS.png" class="responsive-img" style="width: 300px;">
-            <p>
-                Este es un ejemplo de <strong>icono para app (iOS)</strong>, diseñado para que sea identificable, simple y adaptado a diferentes tamaños de pantalla.
-            </p>
-            <img src="img/GRID.png" class="responsive-img" style="width: 500px;">
+            <table>
+                <tr>
+                    <th>
+                        <img src="img/reticula.jpg" class="responsive-img" style="width: 500px;">
+                    </th>
+                    <th>
+                        <table>
+                            <tr>
+                                <th><img src="img/IOS.png" class="responsive-img" style="width: 400px; margin-right: 20px;"></th>
+                                <th><img src="img/GRID.png" class="responsive-img" style="width: 500px;"></th>
+                            </tr>
+                        </table>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            El <strong>logo de Cromateca</strong> representa a un negocio dedicado a vender artículos para arte. 
+                            Se utilizó una <strong>retícula</strong> como base para garantizar proporciones equilibradas y un diseño limpio.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Este es un ejemplo de <strong>icono para app (iOS)</strong>, diseñado para que sea identificable, simple y adaptado a diferentes tamaños de pantalla.
+                        </p>
+                    </td>
+                </tr>
+            </table>
         </section>
 
         <section id="tema5">
@@ -406,16 +425,81 @@
                 <li><strong>Fixed:</strong> Permanece fijo en la pantalla aunque se haga scroll.</li>
                 <li><strong>Sticky:</strong> Se comporta como relative pero al llegar a un punto definido se mantiene fijo.</li>
             </ul>
+            <h3>Uso de las etiquetas &lt;table&gt;</h3>
+                <p>
+                    La etiqueta <code>&lt;table&gt;</code> se utiliza en HTML para crear tablas que organizan información en filas y columnas.  
+                    Dentro de ella se usan otras etiquetas como <code>&lt;tr&gt;</code> (fila), <code>&lt;th&gt;</code> (encabezado de columna) 
+                    y <code>&lt;td&gt;</code> (celda de datos).  
+                    Por ejemplo:
+                </p>
+                <pre>
+                    &lt;table&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Nombre&lt;/th&gt;
+                        &lt;th&gt;Edad&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;Eva&lt;/td&gt;
+                        &lt;td&gt;22&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;/table&gt;
+                    </pre>
+
+                    <p>
+                        Este código crea una tabla con dos columnas: “Nombre” y “Edad”, y una fila de datos debajo. Las tablas permiten presentar 
+                        información de forma clara, ordenada y visualmente estructurada.
+                    </p>
+        </section>
+
+</section>
+        <!-- SECCIÓN PROYECTO 2 -->
+        <section id="proyecto2" style="padding: 40px; margin-top: 40px; background-color: #f2f7fb; border-radius: 10px;">
+            <h3 style="text-align: center;">
+                Proyecto 2 – Página web en equipo
+            </h3>
+
+            <p>
+                En esta sección se presenta el <strong>Proyecto 2</strong> de la materia de Diseño Web, el cual consistió en la 
+                <strong>creación de una página web en equipo</strong>. Durante este proyecto aplicamos los conocimientos adquiridos a lo largo del curso, 
+                integrando estructura HTML, estilos CSS y elementos visuales que fortalecen la experiencia del usuario. 
+                El trabajo en equipo permitió definir una línea gráfica coherente, dividir las tareas de diseño y programación, 
+                y culminar con un resultado funcional y visualmente atractivo.
+            </p>
+
+            <div style="position: relative; width: 100%; height: 0; padding-top: 56.25%;
+                box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                border-radius: 8px; will-change: transform;">
+                <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0;"
+                    src="https://www.canva.com/design/DAG11UNKLP8/1u_VSMU07xVq5PzH2-kTPw/view?embed"
+                    allowfullscreen="allowfullscreen" allow="fullscreen">
+                </iframe>
+            </div>
+
+            <p style="text-align: center; font-family: 'Poppins', sans-serif;">
+                Ver en Canva:
+                <a href="https://www.canva.com/design/DAG11UNKLP8/1u_VSMU07xVq5PzH2-kTPw/view?utm_content=DAG11UNKLP8&utm_campaign=designshare&utm_medium=embeds&utm_source=link"
+                target="_blank" rel="noopener"
+                style="color: #007bff; text-decoration: none; font-weight: 500;">
+                Proyecto 2 – Diseño Web
+                </a>
+            </p>
         </section>
         <section id="Actualizacion">
-            <h3>Actualización de la bitácora</h3>
+            <h3>Actualización de la bitácora 1</h3>
            <p> Esta bitácora cuenta con una <strong>actualización de información</strong> en la que se añadieron los <strong>mockups con los wireframes finos</strong> 
             del diseño de la página web de la universidad, mostrando con mayor detalle la estructura visual y la distribución de los elementos dentro del sitio. 
             Además, se realizó una mejora en la navegación al implementar un <strong>menú sticky</strong>, el cual permanece visible en todo momento al
             desplazarse por la página, facilitando el acceso rápido a los diferentes temas y códigos sin necesidad de regresar al inicio. </p>
-        </section>
 
-</section>
+            <h3>Actualización de la bitácora 2</h3>
+            <p>
+                En esta actualización añadimos la sección de <strong>Proyecto 2</strong>, donde se presenta directamente una 
+                <strong>presentación de Canva</strong> sin la necesidad de salir de nuestra página web, mostrando el proceso de desarrollo de la 
+                página web que realizamos en equipo. Además, en la sección del <strong>Tema 4 – Logo</strong>, se hizo uso de las 
+                <strong>tablas</strong> para lograr una mejor visualización de la información. 
+                En relación con este tema, también se añadió una breve explicación sobre su uso dentro del <strong>Tema 5</strong>.
+            </p>
+        </section>
 
     </main>
 
