@@ -1,0 +1,182 @@
+        @font-face {
+            font-family: 'Poppins';
+            src: url();
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background-color: #1c1c1c;
+            color: #1c1c1c;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        header {
+            text-align: center;
+            background-color: #003366;
+            width: 1440px;
+            height: 80px;
+            margin-bottom: 20px;
+        }
+
+        .header-img {
+            width: 1000px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        
+
+        /* Índice */
+        .indice {
+            background-color: #e6f0ff;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        .indice h2 {
+            color: #c4333e;
+            font-weight: 600;
+            font-size: 22px;
+        }
+
+        .indice ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .indice li {
+            margin: 8px 0;
+            font-size: 16px;
+        }
+
+        .indice a {
+            text-decoration: none;
+            color: #0059b3;
+            font-weight: 500;
+            font-size: 16px;
+        }
+        .menu{
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            overflow: hidden;
+            background-color: white;
+            border-radius: 50px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+            opacity: 0.5; /* 0.0 es invisible, 1.0 es opaco */
+            top: 2px;
+            left: 30px;
+            z-index:1;
+        }
+        .menufondo{
+            padding: 20px;
+            top: 0;
+            overflow: hidden;
+            background-color: white;
+            border-radius: 50px;
+            position: absolute;
+            top: 155px;
+            left: 0px;
+            z-index: 0;
+        }
+        .inicio{
+            text-align: left;
+            padding: 20px;
+            position: absolute;
+            top: 2px;
+            left: 30px;
+            z-index:1;
+        }
+        .centrar{
+            text-align: center;
+        }
+
+        /* Secciones */
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 50px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #c4333e;
+            font-size: 100px;
+            text-align: center;
+        }
+        h3 {
+            color: #003366;
+            font-size: 20px;
+        }
+        p {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        .responsive-img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        ul, ol {
+            font-size: 16px;
+            margin-left: 20px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #003366;
+            color: white;
+            padding: 15px;
+            margin-top: 30px;
+            font-size: 14px;
+        }
+
+        .gradient-box {
+            padding: 20px;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            margin-bottom: 20px;
+        }
+        .hexa-box {
+            padding: 20px;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #003366 0%, #66ccff 100%);
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        .rgb-box {
+            padding: 20px;
+            border-radius: 10px;
+            background: linear-gradient(270deg, rgb(22, 58, 175) 0%, rgb(102, 204, 255) 100%);
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .hsl-box {
+            padding: 20px;
+            border-radius: 10px;
+            background: linear-gradient(340deg, hsl(210, 100%, 25%) 0%, hsl(200, 56%, 34%) 100%);
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .keywords-box {
+            padding: 20px;
+            border-radius: 10px;
+            background: linear-gradient(135deg, navy 0%, skyblue 100%);
+            color: white;
+            margin-bottom: 20px;
+        }
