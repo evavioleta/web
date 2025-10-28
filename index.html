@@ -7,155 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="icon" href="img/favicon.ico">
-
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            background-color: #1c1c1c;
-            color: #1c1c1c;
-            line-height: 1.6;
-            font-size: 16px;
-        }
-
-        header {
-            text-align: center;
-            background-color: #003366;
-            width: 1440px;
-            height: 80px;
-            margin-bottom: 20px;
-        }
-
-        .header-img {
-            width: 1000px;
-            height: 250px;
-            object-fit: cover;
-            border-radius: 10px;
-        }
-        
-
-        /* Índice */
-        .indice {
-            background-color: #e6f0ff;
-            padding: 20px;
-            margin: 20px;
-            border-radius: 10px;
-        }
-
-        .indice h2 {
-            color: #c4333e;
-            font-weight: 600;
-            font-size: 22px;
-        }
-
-        .indice ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .indice li {
-            margin: 8px 0;
-            font-size: 16px;
-        }
-
-        .indice a {
-            text-decoration: none;
-            color: #0059b3;
-            font-weight: 500;
-            font-size: 16px;
-        }
-        .menu{
-            padding: 20px;
-            position: sticky;
-            top: 0;
-            overflow: hidden;
-            background-color: white;
-            border-radius: 50px;
-            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
-            opacity: 0.5; /* 0.0 es invisible, 1.0 es opaco */
-            top: 2px;
-            left: 30px;
-            z-index:1;
-        }
-        .menufondo{
-            padding: 20px;
-            top: 0;
-            overflow: hidden;
-            background-color: white;
-            border-radius: 50px;
-            position: absolute;
-            top: 155px;
-            left: 0px;
-            z-index: 0;
-        }
-        .inicio{
-            text-align: left;
-            padding: 20px;
-            position: absolute;
-            top: 2px;
-            left: 30px;
-            z-index:1;
-        }
-        .centrar{
-            text-align: center;
-        }
-
-        /* Secciones */
-        main {
-            padding: 20px;
-        }
-
-        section {
-            margin-bottom: 50px;
-            padding: 20px;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
-        }
-
-        h2 {
-            color: #c4333e;
-            font-size: 100px;
-            text-align: center;
-        }
-        h3 {
-            color: #003366;
-            font-size: 20px;
-        }
-        p {
-            font-size: 16px;
-            margin-bottom: 15px;
-        }
-
-        .responsive-img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        ul, ol {
-            font-size: 16px;
-            margin-left: 20px;
-        }
-
-        footer {
-            text-align: center;
-            background-color: #003366;
-            color: white;
-            padding: 15px;
-            margin-top: 30px;
-            font-size: 14px;
-        }
-
-        .gradient-box {
-            padding: 20px;
-            border-radius: 10px;
-            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-            color: white;
-            margin-bottom: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
 
@@ -169,34 +21,24 @@
         <a href="#inicio"><img src="img/logo.png" style="width: 20px;"></a>
     </div>
         <div class="centrar">
-        <a href="#body"; style="padding: 10px;">Unidad 1</a>
-        <a href="#tema1"; style="padding: 10px;">Tema 1</a>
+        <a href="#unidad1"; style="padding: 10px;">Unidad 1</a>
+        <a href="#tema1"; style="padding: 10px;">T:1</a>
         <a href="#codigo1"; style="padding: 10px;">Código 1</a>
-        <a href="#tema2"; style="padding: 10px;">Tema 2</a>
+        <a href="#tema2"; style="padding: 10px;">T:2</a>
         <a href="#codigo2"; style="padding: 10px;">Código 2</a>
         <a href="#codigo3"; style="padding: 10px;">Código 3</a>
         <a href="#foro"; style="padding: 10px;">Foro IA</a>
         <a href="#unidad2"; style="padding: 10px;">Unidad 2</a>
-        <a href="#tema3"; style="padding: 10px;">Tema 3</a>
-        <a href="#tema4"; style="padding: 10px;">Tema 4</a>
-        <a href="#tema5"; style="padding: 10px;">Tema 5</a>
+        <a href="#tema3"; style="padding: 10px;">T:3</a>
+        <a href="#tema4"; style="padding: 10px;">T:4</a>
+        <a href="#tema5"; style="padding: 10px;">T:5</a>
         <a href="#proyecto2"; style="padding: 10px;">Proyecto 2</a>
+        <a href="#unidad3"; style="padding: 10px;">Unidad 3</a>
+        <a href="#tema6"; style="padding: 10px;">T:6</a>
+        <a href="#chatgpt"; style="padding: 10px;">Pág Con ChatGPT</a>
         <a href="#Actualizacion"; style="padding: 10px;">Actualización</a>
         </div>
     </nav>
-    <!-- Índice --><!--
-    <nav class="indice">
-        <h2>Índice</h2>
-        <ul><li><a href="#unidad1">Unidad 1</a></li>
-            <li><a href="#tema1">Tema 1 – Conceptos básicos + Shortcuts Mac</a></li>
-            <li><a href="#codigo1">Código 1 – Index + Title + Head + Body + Párrafos + Títulos + Imágenes</a></li>
-            <li><a href="#tema2">Tema 2 – Figma + Diagrama de flujo</a></li>
-            <li><a href="#codigo2">Código 2 – Color + Tamaño + Botón + Mapa + Video + Listas</a></li>
-            <li><a href="#codigo3">Código 3 – Fondos + Article + Nav + Footer + Fuentes</a></li>
-            <li><a href="#foro">Foro IA – IADA</a></li>
-            <li><a href="#unidad2">Unidad 2</a></li>
-        </ul>
-    </nav>-->
 
     <main>
         <section id="unidad1">
@@ -484,12 +326,138 @@
                 </a>
             </p>
         </section>
-        <section id="Actualizacion">
+        <section id="unidad3">
+            <h2>Unidad 3</h2>
+            <section id="identidad-web">
+    <h3>Competencia, Diferenciador, Colores y Tipografía</h3>
+    <p>
+        En esta parte del proyecto en equipo correspondiente a la <strong>Unidad 2</strong>, analizamos los elementos que conforman 
+        la identidad visual de nuestra página web.  
+        Primero, se identificó a la <strong>competencia</strong> directa e indirecta para reconocer sus fortalezas y debilidades, 
+        lo que nos permitió definir un <strong>diferenciador</strong> claro que destacara nuestro sitio frente a otros similares.  
+        Posteriormente, seleccionamos una <strong>paleta de colores</strong> coherente con la temática y la personalidad de nuestro proyecto, 
+        cuidando que transmitiera armonía y accesibilidad visual.  
+        Finalmente, trabajamos en la <strong>tipografía</strong>, eligiendo fuentes legibles, modernas y adecuadas al estilo del sitio web, 
+        reforzando la identidad visual y la experiencia del usuario.
+    </p>
+
+    <!-- Presentación Canva incrustada -->
+    <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+    padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+    border-radius: 8px; will-change: transform;">
+      <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+        src="https://www.canva.com/design/DAG10njgkh8/S6TN0_MKOSMazRWU1czWtA/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+      </iframe>
+    </div>
+    <a href="https://www.canva.com/design/DAG10njgkh8/S6TN0_MKOSMazRWU1czWtA/view?utm_content=DAG10njgkh8&utm_campaign=designshare&utm_medium=embeds&utm_source=link" 
+       target="_blank" rel="noopener"
+       style="display:inline-block; background-color:#003366; color:white; padding:10px 20px; text-decoration:none; border-radius:5px; font-family: 'Poppins', sans-serif;">
+       Ver presentación de tipografía – Ximena Marchand
+    </a>
+</section>
+
+            <section id="tema6"> 
+                <h3>Uso del &lt;div&gt; y SEO</h3>
+            <p>
+                En diseño web, existen diferentes formas de representar los colores.
+            </p> 
+            <div class="hexa-box">
+                <p>  
+                El formato <strong>Hexadecimal</strong> (por ejemplo, <code>#FF0000</code>) utiliza combinaciones de números y letras para definir los valores de rojo, verde y azul.  
+                </p>
+            </div>
+              
+            <div class="rgb-box">
+                <p>
+                    El <strong>RGB</strong> (<code>rgb(255, 0, 0)</code>) también se basa en estos tres colores primarios, 
+                    mientras que <strong>RGBA</strong> (<code>rgba(255, 0, 0, 1)</code>) hace uso de un cuarto valor que representa 
+                    el nivel de transparencia conocido como canal alfa.  
+                </p>
+            </div>
+
+            <div class="hsl-box">
+                <p>
+                    Por otro lado, el formato <strong>HSL</strong> (<code>hsl(0, 100%, 50%)</code>) define los colores mediante tres propiedades: 
+                    tono, saturación y luminosidad, y su variante <strong>HSLA</strong> (<code>hsla(0, 100%, 50%, 1)</code>) añade también el canal alfa.  
+                </p>
+            </div>
+
+            <div class="keywords-box">
+                <p>
+                    Por último, se pueden emplear <strong>keywords</strong> o nombres de color en inglés 
+                    (como <code>red</code> o <code>blue</code>), los cuales representan tonalidades predefinidas en los navegadores.
+                </p>
+            </div>
+            </section>
+        </section>
+        <section id="chatgpt">
+    <h3>Actividad con ChatGPT</h3>
+    <p>
+        En esta actividad se realizó una <strong>página web con ayuda de la inteligencia artificial ChatGPT</strong>.  
+        Para ello, se utilizó la siguiente instrucción inicial:  
+        <em>"Hola chat, hazme un código en HTML para una página web que no sea responsiva, tú elige el resto."</em>  
+        A partir de esta indicación, se generó una estructura básica de sitio web que sirvió como punto de partida para el ejercicio.  
+    </p>
+
+    <p>
+        A continuación, se muestra el <strong>resultado inicial obtenido con ChatGPT</strong>:
+    </p>
+
+    <!-- Espacio para screenshots del código generado -->
+    <div class="screenshots">
+        <!-- Aquí se colocarán 2 o 3 capturas de pantalla -->
+        <img src="img/imagen1.png" alt="Resultado inicial ChatGPT" style="width:45%; margin:10px;">
+        <img src="img/imagen2.png" alt="Resultado inicial ChatGPT" style="width:45%; margin:10px;">
+        <!-- <img src="imagen3.jpg" alt="Resultado inicial ChatGPT" style="width:45%; margin:10px;"> -->
+    </div>
+
+    <p>
+        Posteriormente, con los <strong>conocimientos adquiridos en clase</strong>, se trabajó sobre esta “plantilla” inicial para mejorar su estructura, diseño y organización.  
+        </p>
+
+    <p>
+        A continuación, se presentan <strong>las mejoras realizadas</strong> en el resultado final:
+    </p>
+
+    <!-- Espacio para screenshots del resultado mejorado -->
+    <div class="screenshots">
+        <!-- Aquí se colocarán 2 o 3 capturas de pantalla -->
+        <img src="img/Archivo 1.png" alt="Versión mejorada de la página" style="width:45%; margin:10px;">
+        <img src="img/Archivo 2.png" alt="Versión mejorada de la página" style="width:45%; margin:10px;">
+        <img src="img/Archivo 3.png" alt="Versión mejorada de la página" style="width:45%; margin:10px;">
+        <img src="img/Archivo 4.png" alt="Versión mejorada de la página" style="width:45%; margin:10px;">
+        <!-- <img src="mejora3.jpg" alt="Versión mejorada de la página" style="width:45%; margin:10px;"> -->
+    </div>
+</section>
+
+        <section>
+    <table style="width:100%; border-collapse:collapse;">
+        <tr>
+            <td style="width:50%; vertical-align: top; padding: 10px;">
+                <form action="">
+                    <label for="name">Nombre:</label><br>
+                    <input type="text" id="name" value="Daniel">
+                    <input type="submit" value="Guardar">
+                </form>
+            </td>
+            <td style="width:50%; vertical-align: top; padding: 10px;">
+                <p>
+                    Este código es útil para <strong>obtener información del usuario</strong> a través de un formulario 
+                    y posteriormente <strong>guardarla en una base de datos</strong> (aunque en esta ocasión no está disponible la funcionalidad 
+                    de almacenamiento).  
+                </p>
+            </td>
+        </tr>
+    </table>
+</section>
+
+<section id="Actualizacion">
             <h3>Actualización de la bitácora 1</h3>
-           <p> Esta bitácora cuenta con una <strong>actualización de información</strong> en la que se añadieron los <strong>mockups con los wireframes finos</strong> 
-            del diseño de la página web de la universidad, mostrando con mayor detalle la estructura visual y la distribución de los elementos dentro del sitio. 
-            Además, se realizó una mejora en la navegación al implementar un <strong>menú sticky</strong>, el cual permanece visible en todo momento al
-            desplazarse por la página, facilitando el acceso rápido a los diferentes temas y códigos sin necesidad de regresar al inicio. </p>
+            <p>
+                Esta bitácora cuenta con una <strong>actualización de información</strong> en la que se añadieron los <strong>mockups con los wireframes finos</strong> 
+                del diseño de la página web de la universidad, mostrando con mayor detalle la estructura visual y la distribución de los elementos dentro del sitio. 
+                Además, se realizó una mejora en la navegación al implementar un <strong>menú sticky</strong>, el cual permanece visible en todo momento al
+                desplazarse por la página, facilitando el acceso rápido a los diferentes temas y códigos sin necesidad de regresar al inicio. </p>
 
             <h3>Actualización de la bitácora 2</h3>
             <p>
@@ -499,8 +467,19 @@
                 <strong>tablas</strong> para lograr una mejor visualización de la información. 
                 En relación con este tema, también se añadió una breve explicación sobre su uso dentro del <strong>Tema 5</strong>.
             </p>
-        </section>
+            <h3>Actualización de la bitácora 3</h3>
+            <p>
+                En esta actualización se añadió una <strong>nueva sección correspondiente a la Unidad 2</strong>, 
+                donde se presenta una <strong>introducción al proyecto en equipo</strong> junto con una 
+                <strong>presentación de Canva</strong> integrada directamente en la página, 
+                permitiendo visualizar el desarrollo y los avances del diseño web sin salir del sitio.  
+                Además, se incorporó un <strong>apartado sobre los tipos de color</strong> empleados en el desarrollo web, 
+                explicando los formatos <strong>Hexadecimal, RGB, HSL</strong> y <strong>keywords</strong>.  
+                Cada tipo de color se muestra dentro de un <strong>&lt;div&gt;</strong> con estilos personalizados en la hoja de CSS.
+                Por último se colocó la actividad correspondiente a crear una página web con ayuda de Chat GPT.
+            </p>
 
+        </section>
     </main>
 
     <footer>
