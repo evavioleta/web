@@ -17,8 +17,9 @@
     </header>
     
     <nav class="menu">
-    <div class="inicio">
-        <a href="#inicio"><img src="img/logo.png" style="width: 20px;"></a>
+    <div class="inicio contenedor">
+        <div class="rotar"><a href="#inicio"><img src="img/logo.png" style="width: 20px;"></a></div>
+        
     </div>
         <div class="centrar">
         <a href="#unidad1"; style="padding: 10px;">Unidad 1</a>
@@ -39,6 +40,21 @@
         <a href="#Actualizacion"; style="padding: 10px;">Actualización</a>
         </div>
     </nav>
+
+    <!-- Banner de Cookies -->
+<div class="cookies-banner" id="cookiesBanner">
+  <p>
+    Utilizamos cookies para mejorar tu experiencia en la súper bitácora 3000 y ofrecerte contenido personalizado.
+    <a href="#" class="cookies-link">Leer más</a>
+  </p>
+  <button class="cookies-btn" onclick="aceptarCookies()">Acepto</button>
+</div>
+
+<script>
+function aceptarCookies(){
+  document.getElementById("cookiesBanner").style.display = "none";
+}
+</script>
 
     <main>
         <section id="unidad1">
@@ -403,12 +419,9 @@
         A continuación, se muestra el <strong>resultado inicial obtenido con ChatGPT</strong>:
     </p>
 
-    <!-- Espacio para screenshots del código generado -->
     <div class="screenshots">
-        <!-- Aquí se colocarán 2 o 3 capturas de pantalla -->
         <img src="img/imagen1.png" alt="Resultado inicial ChatGPT" style="width:45%; margin:10px;">
         <img src="img/imagen2.png" alt="Resultado inicial ChatGPT" style="width:45%; margin:10px;">
-        <!-- <img src="imagen3.jpg" alt="Resultado inicial ChatGPT" style="width:45%; margin:10px;"> -->
     </div>
 
     <p>
@@ -419,14 +432,11 @@
         A continuación, se presentan <strong>las mejoras realizadas</strong> en el resultado final:
     </p>
 
-    <!-- Espacio para screenshots del resultado mejorado -->
     <div class="screenshots">
-        <!-- Aquí se colocarán 2 o 3 capturas de pantalla -->
         <img src="img/Archivo 1.png" alt="Versión mejorada de la página" style="width:45%; margin:10px;">
         <img src="img/Archivo 2.png" alt="Versión mejorada de la página" style="width:45%; margin:10px;">
         <img src="img/Archivo 3.png" alt="Versión mejorada de la página" style="width:45%; margin:10px;">
         <img src="img/Archivo 4.png" alt="Versión mejorada de la página" style="width:45%; margin:10px;">
-        <!-- <img src="mejora3.jpg" alt="Versión mejorada de la página" style="width:45%; margin:10px;"> -->
     </div>
 </section>
 
@@ -450,7 +460,47 @@
         </tr>
     </table>
 </section>
+        <section>
+            <table>
+                <tr>
+                    <th style="padding: 50px;">
+            <h3>1. Movimiento (translateX)</h3>
+            <div class="contenedor">
+                <div id="caja" class="mover">Mover</div>
+            </div>
+                    </th>
+                    <th style="padding: 50px;">
+            <h3>2. Escala (scale)</h3>
+            <div class="contenedor">
+                <div id="caja" class="escalar">Escalar</div>
+            </div>
+                    </th>
+                    <th style="padding: 50px;">
+            <h3>3. Rotación (rotate)</h3>
+            <div class="contenedor">
+                <div id="caja" class="rotar">Rotar</div>
+            </div>
+                    </th>
+                    <th style="padding: 50px;">
+            <h3>4. Cambio de Color (background-color)</h3>
+            <div class="contenedor">
+                <div id="caja" class="color">Color</div>
+            </div>
+                    </th>
+                </tr>
+            </table>
+        </section>
+        <section>
+    <h3>Figura con Animación Combinada</h3>
 
+    <div class="demo-container">
+        <div class="figura-animada">Hover</div>
+    </div>
+</section>
+<section>
+    <h2>Cotización</h2>
+    <img src="img/cotizacion.jpg" class="responsive-img" style="width: 1000px; text-align: center;">
+</section>
 <section id="Actualizacion">
             <h3>Actualización de la bitácora 1</h3>
             <p>
@@ -478,9 +528,15 @@
                 Cada tipo de color se muestra dentro de un <strong>&lt;div&gt;</strong> con estilos personalizados en la hoja de CSS.
                 Por último se colocó la actividad correspondiente a crear una página web con ayuda de Chat GPT.
             </p>
+            <h3>Actualización de la bitácora 4</h3>
+            <p>
+                En esta actualización se integraron las cuatro transformaciones (movimiento, escala, rotación y cambio de color)
+                en una sola figura animada, de manera que todas las transiciones ocurren de forma fluida al pasar el cursor sobre ella.
+                Además, añadimos la cotización realizada con respecto a nuestra página web.
+            </p>
 
         </section>
-    </main>
+        </main>
 
     <footer>
         <p>Bitácora - Clase de Diseño Web | 2025</p>
