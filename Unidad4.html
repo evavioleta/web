@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad 4</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+<main>
+     <!-- Encabezado -->
+    <header>
+      <p id="inicio" style="color: white; margin-bottom: 10px; font-size: 50px; font-family: 'Oswald';">Bitácora - Clase de Diseño Web | 2025</p>
+    </header>
+    
+    <nav class="menu">
+    <div class="inicio contenedor">
+        <div class="rotar"><a href="#inicio"><img src="img/logo.png" style="width: 20px;"></a></div>
+        
+    </div>
+        <div class="menuSticky">
+    <ul>
+        <li class="dropdown">
+            <a href="Unidad1.html" class="dropbtn">Unidad 1</a>
+            <div class="dropdown-content">
+                <a href="#tema1">Tema 1</a>
+                <a href="#codigo1"; style="padding: 10px;">Código 1</a>
+                <a href="#tema2"; style="padding: 10px;">Tema 2</a>
+                <a href="#codigo2"; style="padding: 10px;">Código 2</a>
+                <a href="#codigo3"; style="padding: 10px;">Código 3</a>
+                <a href="#foro"; style="padding: 10px;">Foro IA</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="Unidad2.html" class="dropbtn">Unidad 2</a>
+            <div class="dropdown-content">
+                <a href="#tema3"; style="padding: 10px;">Tema 3</a>
+                <a href="#tema4"; style="padding: 10px;">Tema4</a>
+                <a href="#tema5"; style="padding: 10px;">Tema 5</a>
+                <a href="#proyecto2"; style="padding: 10px;">Proyecto 2</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="Unidad3.html" class="dropbtn">Unidad 3</a>
+            <div class="dropdown-content">
+                <a href="#tema6"; style="padding: 10px;">Tema 6</a>
+                <a href="#chatgpt"; style="padding: 10px;">Página Con ChatGPT</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="Unidad4.html" class="dropbtn">Unidad 4</a>
+            <div class="dropdown-content">
+                <a href="#cfomr"; style="padding: 10px;">Código de formulario</a>
+                <a href="#animaciones"; style="padding: 10px;">Animaciones</a>
+                <a href="#cotizacion"; style="padding: 10px;">Cotización</a>
+                <a href="#efectos"; style="padding: 10px;">SVG, Parallax, Filtros y Hover</a>
+                <a href="#perfiles"; style="padding: 10px;">Perfiles de Usuario</a>
+            </div>
+        </li>
+        <li><a href="Actualizacion.html" class="dropbtn">Actualización</a></li>
+    </ul>
+    </div>
+    </nav>
+
+    <!-- Banner de Cookies -->
+<div class="cookies-banner" id="cookiesBanner">
+  <p>
+    Utilizamos cookies para mejorar tu experiencia en la súper bitácora 3000 y ofrecerte contenido personalizado.
+    <a href="#" class="cookies-link">Leer más</a>
+  </p>
+  <button class="cookies-btn" onclick="aceptarCookies()">Acepto</button>
+</div>
+
+<script>
+function aceptarCookies(){
+  document.getElementById("cookiesBanner").style.display = "none";
+}
+</script>
+<section id="unidad4">
+            <h2>Unidad 4</h2>
+<section id="cform">
+    <h3>Código de formulario</h3>
+    <table style="width:100%; border-collapse:collapse;">
+        <tr>
+            <td style="width:50%; vertical-align: top; padding: 10px;">
+                <form action="">
+                    <label for="name">Nombre:</label><br>
+                    <input type="text" id="name" value="Daniel">
+                    <input type="submit" value="Guardar">
+                </form>
+            </td>
+            <td style="width:50%; vertical-align: top; padding: 10px;">
+                <p>
+                    Este código es útil para <strong>obtener información del usuario</strong> a través de un formulario 
+                    y posteriormente <strong>guardarla en una base de datos</strong> (aunque en esta ocasión no está disponible la funcionalidad 
+                    de almacenamiento).  
+                </p>
+            </td>
+        </tr>
+    </table>
+</section>
+        <section id="animaciones">
+            <h3>Animaciones</h3>
+            <table>
+                <tr>
+                    <th style="padding: 50px;">
+            <h3>1. Movimiento (translateX)</h3>
+            <div class="contenedor">
+                <div id="caja" class="mover">Mover</div>
+            </div>
+                    </th>
+                    <th style="padding: 50px;">
+            <h3>2. Escala (scale)</h3>
+            <div class="contenedor">
+                <div id="caja" class="escalar">Escalar</div>
+            </div>
+                    </th>
+                    <th style="padding: 50px;">
+            <h3>3. Rotación (rotate)</h3>
+            <div class="contenedor">
+                <div id="caja" class="rotar">Rotar</div>
+            </div>
+                    </th>
+                    <th style="padding: 50px;">
+            <h3>4. Cambio de Color (background-color)</h3>
+            <div class="contenedor">
+                <div id="caja" class="color">Color</div>
+            </div>
+                    </th>
+                </tr>
+            </table>
+        </section>
+        <section>
+    <h3>Figura con Animación Combinada</h3>
+
+    <div class="demo-container">
+        <div class="figura-animada">Hover</div>
+    </div>
+</section>
+<section id="cotizacion">
+    <h3>Cotización</h3>
+    <img src="img/cotizacion.jpg" class="responsive-img" style="width: 1000px; text-align: center;">
+</section>
+<section id="efectos">
+    <h3>Efectos Web: SVG, Parallax, Filtros y Hover</h3>
+
+    <section class="section">
+        <h3>1. SVG (Scalable Vector Graphics)</h3>
+        <p>
+            Los <strong>SVG</strong> son gráficos vectoriales escalables que permiten representar formas e ilustraciones 
+            sin perder calidad al cambiar de tamaño. Se utilizan ampliamente en logotipos, íconos y elementos animados 
+            dentro del diseño web.
+        </p>
+
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-earbuds" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M6.825 4.138c.596 2.141-.36 3.593-2.389 4.117a4.4 4.4 0 0 1-2.018.054c-.048-.01.9 2.778 1.522 4.61l.41 1.205a.52.52 0 0 1-.346.659l-.593.19a.55.55 0 0 1-.69-.34L.184 6.99c-.696-2.137.662-4.309 2.564-4.8 2.029-.523 3.402 0 4.076 1.948z" />
+        </svg>
+    </section>
+
+    <section class="section">
+        <h3>Parallax</h3>
+        <p>
+            El <strong>efecto Parallax</strong> genera una sensación de profundidad al mover el fondo de una imagen a una 
+            velocidad diferente a la del contenido. Es común en páginas modernas para lograr dinamismo y una experiencia 
+            más atractiva al hacer scroll.
+        </p>
+        <div class="parallax"></div>
+    </section>
+
+    <section class="section">
+        <h3>Filtros CSS</h3>
+        <p>
+            Los <strong>filtros</strong> permiten modificar la apariencia de las imágenes usando propiedades como 
+            <em>blur, brightness, contrast, grayscale e invert</em>. 
+            Esto se logra directamente desde CSS, sin necesidad de editar los archivos originales.
+        </p>
+        <div class="filters" style="text-align: center;">
+            <img class="im1" src="https://images.unsplash.com/photo-1689659700109-db8a16a7da0a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aGFwcHklMjBzbWlsZXxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000" alt="Blur">
+            <img class="im2" src="https://images.unsplash.com/photo-1689659700109-db8a16a7da0a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aGFwcHklMjBzbWlsZXxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000" alt="Brightness">
+            <img class="im3" src="https://images.unsplash.com/photo-1689659700109-db8a16a7da0a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aGFwcHklMjBzbWlsZXxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000" alt="Contrast">
+            <img class="im4" src="https://images.unsplash.com/photo-1689659700109-db8a16a7da0a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aGFwcHklMjBzbWlsZXxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000" alt="Grayscale">
+            <img class="im5" src="https://images.unsplash.com/photo-1689659700109-db8a16a7da0a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aGFwcHklMjBzbWlsZXxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000" alt="Invert">
+        </div>
+    </section>
+</section>
+<section id="perfiles">
+    <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https://www.canva.com/design/DAG4VzR60xo/2jSLwCnrCZWC10JX8BQEFw/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAG4VzR60xo&#x2F;2jSLwCnrCZWC10JX8BQEFw&#x2F;view?utm_content=DAG4VzR60xo&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"></a> de Yoletzin Flores
+            
+</section>
+</main>
+
+    <footer>
+        <p>Bitácora - Clase de Diseño Web | 2025</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3393.0340142469904!2d-106.43630752446322!3d31.742272524113073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ea4359ba3469d5%3A0x5fdab3bc5a4f953c!2sUACJ%20IIT-IADA!5e0!3m2!1ses-419!2smx!4v1757485452561!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </footer>
+
+</body>
+</html>
