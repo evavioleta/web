@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,105 +10,112 @@
     <link rel="icon" href="img/favicon.ico">
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
+
 <body>
 
     <!-- Encabezado -->
     <header>
-      <p id="inicio" style="color: white; margin-bottom: 10px; font-size: 50px; font-family: 'Oswald';">Bitácora Unidad 1 y 2 - Clase de Diseño Web | 2025</p>
+        <p id="inicio" style="color: white; margin-bottom: 10px; font-size: 50px; font-family: 'Oswald';">Bitácora
+            Unidad 1 y 2 - Clase de Diseño Web | 2025</p>
     </header>
-    
-    <nav class="menu">
-    <div class="inicio contenedor">
-        <div class="rotar"><a href="#inicio"><img src="img/logo.png" style="width: 20px;"></a></div>
-        
-    </div>
-        <div class="centrar">
-            <a href="Unidad1.html">Unidad 1</a>
-            <a href="Unidad1.html">Unidad 2</a>
-            <a href="Unidad1.html">Unidad 3</a>
-        <a href="#unidad1"; style="padding: 10px;">Unidad 1</a>
-        <a href="#tema1"; style="padding: 10px;">T:1</a>
-        <a href="#codigo1"; style="padding: 10px;">Código 1</a>
-        <a href="#tema2"; style="padding: 10px;">T:2</a>
-        <a href="#codigo2"; style="padding: 10px;">Código 2</a>
-        <a href="#codigo3"; style="padding: 10px;">Código 3</a>
-        <a href="#foro"; style="padding: 10px;">Foro IA</a>
-        <a href="#unidad2"; style="padding: 10px;">Unidad 2</a>
-        <a href="#tema3"; style="padding: 10px;">T:3</a>
-        <a href="#tema4"; style="padding: 10px;">T:4</a>
-        <a href="#tema5"; style="padding: 10px;">T:5</a>
-        <a href="#proyecto2"; style="padding: 10px;">Proyecto 2</a>
-        <a href="#unidad3"; style="padding: 10px;">Unidad 3</a>
-        <a href="#tema6"; style="padding: 10px;">T:6</a>
-        <a href="#chatgpt"; style="padding: 10px;">Pág Con ChatGPT</a>
-        <a href="#Actualizacion"; style="padding: 10px;">Actualización</a>
+
+    <nav class="menuSticky">
+            <div class="inicio contenedor">
+                <div class="rotar"><a href="index.html"><img src="img/logo.png" style="width: 25px;"></a></div>
+
+            </div>
+            <ul>
+                <li class="dropdown">
+                    <a href="Unidad1.html" class="dropbtn" style="margin-left: 30px;">Unidad 1</a>
+                    <div class="dropdown-content">
+                        <a href="#tema1">Tema 1</a>
+                        <a href="#codigo1" ; style="padding: 10px;">Código 1</a>
+                        <a href="#tema2" ; style="padding: 10px;">Tema 2</a>
+                        <a href="#codigo2" ; style="padding: 10px;">Código 2</a>
+                        <a href="#codigo3" ; style="padding: 10px;">Código 3</a>
+                        <a href="#foro" ; style="padding: 10px;">Foro IA</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="Unidad2.html" class="dropbtn">Unidad 2</a>
+                    <div class="dropdown-content">
+                        <a href="#tema3" ; style="padding: 10px;">Tema 3</a>
+                        <a href="#tema4" ; style="padding: 10px;">Tema4</a>
+                        <a href="#tema5" ; style="padding: 10px;">Tema 5</a>
+                        <a href="#proyecto2" ; style="padding: 10px;">Proyecto 2</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="Unidad3.html" class="dropbtn">Unidad 3</a>
+                    <div class="dropdown-content">
+                        <a href="#tema6" ; style="padding: 10px;">Tema 6</a>
+                        <a href="#chatgpt" ; style="padding: 10px;">Página Con ChatGPT</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="Unidad4.html" class="dropbtn">Unidad 4</a>
+                    <div class="dropdown-content">
+                        <a href="#cfomr" ; style="padding: 10px;">Código de formulario</a>
+                        <a href="#animaciones" ; style="padding: 10px;">Animaciones</a>
+                        <a href="#cotizacion" ; style="padding: 10px;">Cotización</a>
+                        <a href="#efectos" ; style="padding: 10px;">SVG, Parallax, Filtros y Hover</a>
+                        <a href="#perfiles" ; style="padding: 10px;">Perfiles de Usuario</a>
+                    </div>
+                </li>
+                <li class="dropdown"><a href="Actualizacion.html" class="dropbtn">Actualización</a></li>
+            </ul>
         </div>
-    </nav>
+        </nav>
 
     <!-- Banner de Cookies -->
-<div class="cookies-banner" id="cookiesBanner">
-  <p>
-    Utilizamos cookies para mejorar tu experiencia en la súper bitácora 3000 y ofrecerte contenido personalizado.
-    <a href="#" class="cookies-link">Leer más</a>
-  </p>
-  <button class="cookies-btn" onclick="aceptarCookies()">Acepto</button>
-</div>
+    <div class="cookies-banner" id="cookiesBanner">
+        <p>
+            Utilizamos cookies para mejorar tu experiencia en la súper bitácora 3000 y ofrecerte contenido
+            personalizado.
+            <a href="#" class="cookies-link">Leer más</a>
+        </p>
+        <button class="cookies-btn" onclick="aceptarCookies()">Acepto</button>
+    </div>
 
-<script>
-function aceptarCookies(){
-  document.getElementById("cookiesBanner").style.display = "none";
-}
-</script>
+    <script>
+        function aceptarCookies() {
+            document.getElementById("cookiesBanner").style.display = "none";
+        }
+    </script>
 
     <main>
-<section id="Actualizacion">
-            <h3>Actualización de la bitácora 1</h3>
-            <p>
-                Esta bitácora cuenta con una <strong>actualización de información</strong> en la que se añadieron los <strong>mockups con los wireframes finos</strong> 
-                del diseño de la página web de la universidad, mostrando con mayor detalle la estructura visual y la distribución de los elementos dentro del sitio. 
-                Además, se realizó una mejora en la navegación al implementar un <strong>menú sticky</strong>, el cual permanece visible en todo momento al
-                desplazarse por la página, facilitando el acceso rápido a los diferentes temas y códigos sin necesidad de regresar al inicio. </p>
-
-            <h3>Actualización de la bitácora 2</h3>
-            <p>
-                En esta actualización añadimos la sección de <strong>Proyecto 2</strong>, donde se presenta directamente una 
-                <strong>presentación de Canva</strong> sin la necesidad de salir de nuestra página web, mostrando el proceso de desarrollo de la 
-                página web que realizamos en equipo. Además, en la sección del <strong>Tema 4 – Logo</strong>, se hizo uso de las 
-                <strong>tablas</strong> para lograr una mejor visualización de la información. 
-                En relación con este tema, también se añadió una breve explicación sobre su uso dentro del <strong>Tema 5</strong>.
+        <section>
+            <h3>Revisión 21 de nov</h3>
+            <p>Revisión de TEAMS:
+                Instrucciones
+                    <li>Subir presentación con cambios a la bitácora y link de Github.</li>
+                    <li>Diagrama de flujo y wireframes estáticos - 2</li>
+                    <li>Mapa del sitio - 1</li>
+                    <li>Pitch - 1</li>
+                    <li>Logo, colores y tipografía - 1</li>
+                    <li>Cotización - 1</li>
+                    <li>Mockups - 1</li>
+                    <li>Sitio web / Presentación - 3</li>
             </p>
-            <h3>Actualización de la bitácora 3</h3>
-            <p>
-                En esta actualización se añadió una <strong>nueva sección correspondiente a la Unidad 2</strong>, 
-                donde se presenta una <strong>introducción al proyecto en equipo</strong> junto con una 
-                <strong>presentación de Canva</strong> integrada directamente en la página, 
-                permitiendo visualizar el desarrollo y los avances del diseño web sin salir del sitio.  
-                Además, se incorporó un <strong>apartado sobre los tipos de color</strong> empleados en el desarrollo web, 
-                explicando los formatos <strong>Hexadecimal, RGB, HSL</strong> y <strong>keywords</strong>.  
-                Cada tipo de color se muestra dentro de un <strong>&lt;div&gt;</strong> con estilos personalizados en la hoja de CSS.
-                Por último se colocó la actividad correspondiente a crear una página web con ayuda de Chat GPT.
-            </p>
-            <h3>Actualización de la bitácora 4</h3>
-            <p>
-                En esta actualización se integraron las cuatro transformaciones (movimiento, escala, rotación y cambio de color)
-                en una sola figura animada, de manera que todas las transiciones ocurren de forma fluida al pasar el cursor sobre ella.
-                Además, añadimos la cotización realizada con respecto a nuestra página web.
-            </p>
-            <h3>Actualización de la bitácora 5</h3>
-            <p>
-                En esta actualización se añadieron los temas <strong>SVG, Parallax, Filtros y Hover</strong>, los cuales permiten 
-                mejorar la experiencia visual e interactiva de las páginas web. A través de estos ejemplos se demuestra cómo aplicar 
-                gráficos escalables, fondos con movimiento, efectos visuales mediante filtros y animaciones al pasar el cursor. 
-                Estos recursos fortalecen el conocimiento en diseño y animación web, haciendo las interfaces más dinámicas y modernas.
-            </p>
-
+            <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+                padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                border-radius: 8px; will-change: transform;">
+                <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                    src="https://www.canva.com/design/DAG4sJ9-Bw8/LBD9RZovxXtnGQ6ZKIsdLA/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                </iframe>
+                </div>
+                <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAG4sJ9-Bw8&#x2F;LBD9RZovxXtnGQ6ZKIsdLA&#x2F;view?utm_content=DAG4sJ9-Bw8&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Proyecto parcial 3</a> de Diseño
         </section>
-        </main>
+    </main>
 
     <footer>
         <p>Bitácora - Clase de Diseño Web | 2025</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3393.0340142469904!2d-106.43630752446322!3d31.742272524113073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ea4359ba3469d5%3A0x5fdab3bc5a4f953c!2sUACJ%20IIT-IADA!5e0!3m2!1ses-419!2smx!4v1757485452561!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3393.0340142469904!2d-106.43630752446322!3d31.742272524113073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ea4359ba3469d5%3A0x5fdab3bc5a4f953c!2sUACJ%20IIT-IADA!5e0!3m2!1ses-419!2smx!4v1757485452561!5m2!1ses-419!2smx"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
     </footer>
 
 </body>
+
 </html>
